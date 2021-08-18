@@ -1,0 +1,22 @@
+{
+  "name": "chencs-babel-log",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chencs",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/generator": "^7.13.9",
+    "@babel/parser": "^7.13.13",
+    "@babel/traverse": "^7.13.13",
+    "@babel/types": "^7.13.14"
+  }
+}
