@@ -4,7 +4,6 @@ const parameterInsertPlugin = ({types, template}, options, dirname) => {
   return {
     visitor: {
       CallExpression(path, state) {
-        console.log(state);
         if (path.node.isNew) {
           return;
         };
