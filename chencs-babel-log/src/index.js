@@ -1,49 +1,25 @@
+const { transformFromAstSync, parseSync } = require('@babel/core');
 const parser = require('@babel/parser');
-const traverse = require('@babel/traverse').default;
-const generate = require('@babel/generator').default;
-const types = require('@babel/types');
+const insertParameterPlugin = require('./plugin/babel-log');
+const fs = require('fs');
+const path = require('path');
 
-const sourceCode = 
-  `
-    console.log(1);
+// 插件
+// 读取文件中的源码
+const sourceCode = fs.readFileSync(path.join(__dirname, './sourceCode.js'), {
+  encoding: 'utf-8',
+});
 
-    function func() {
-        console.info(2);
-    }
-
-    export default class Clazz {
-        say() {
-            console.debug(3);
-        }
-        render() {
-            return <div>{console.error(4)}</div>
-        }
-    }
-  `;
-
-// 转成AST
+// 转化AST
 const ast = parser.parse(sourceCode, {
   sourceType: 'unambiguous',
   plugins: ['jsx']
 });
 
-// 处理AST
-traverse(ast, {
-  CallExpression (path, state) {
-    console.log(path, state);
-    if (
-      types.isMemberExpression(path.node.callee)
-      && path.node.callee.object.name === 'console'
-      && ['log', 'info', 'error', 'debug'].includes(path.node.callee.property.name)
-    ) {
-      const { line, column } = path.node.loc.start;
-      path.node.arguments.unshift(types.stringLiteral(`filename: (${line}, ${column})`))
-    }
-  },
+// AST 转 目标代码
+const { code } = transformFromAstSync(ast, sourceCode, {
+  plugins: [insertParameterPlugin],
+  filename: 'sourceCode',
 });
 
-// 打印目标代码
-const { code, map } = generate(ast);
-
 console.log(code);
-
