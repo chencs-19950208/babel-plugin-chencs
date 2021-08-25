@@ -1,0 +1,8 @@
+{ 
+  "lerna": "4.0.0",
+  "packages": [
+    "packages/chencs-babel-log"
+  ],
+  "version": "1.0.0",
+  "npmClient": "yarn"
+}
