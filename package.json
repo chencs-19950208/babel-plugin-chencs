@@ -1,0 +1,17 @@
+{
+  "name": "babel-plugin-chencs",
+  "private": true,
+  "description": "bable-plugin",
+  "author": "chencs",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "scripts": {
+
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
