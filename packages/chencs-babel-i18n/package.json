@@ -1,0 +1,29 @@
+{
+  "name": "chencs-babel-i18n",
+  "version": "1.0.0",
+  "description": "babel-i18n 国际化插件",
+  "keywords": [
+    "chencs-babel-i18n"
+  ],
+  "author": "chencs",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chencs-19950208/babel-plugin-chencs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/chencs-19950208/babel-plugin-chencs/issues"
+  }
+}
