@@ -8,9 +8,7 @@
   "keywords": [
     "babel-plugin"
   ],
-  "scripts": {
-
-  },
+  "scripts": {},
   "devDependencies": {
     "lerna": "^4.0.0"
   }
