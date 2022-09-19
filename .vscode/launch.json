@@ -4,13 +4,7 @@
       "type": "node",
       "request": "launch",
       "name": "chencs-i18n",
-      "program": "${workspaceFolder}/packages/chencs-babel-i18n/lib/index.js"
+      "program": "${workspaceFolder}/packages/chencs-babel-tracker/lib/chencs-babel-tracker.js"
     },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "chencs-i18n-plugin",
-      "program": "${workspaceFolder}/packages/chencs-babel-i18n/lib/chencs-i18n.js"
-    }
   ]
 }

@@ -1,0 +1,61 @@
+Arguments: 
+  D:\officeSoftware\NodeJS\node.exe D:\officeSoftware\NodeJS\npm-global\node_modules\yarn\bin\yarn.js add @babel/helper-module-imports
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\develop-software\Git\cmd;D:\sources\mysql-8.0.12-winx64\bin;D:\officeSoftware\NodeJS\npm-global\node-modules;D:\officeSoftware\NodeJS\npm-global;C:\Users\cool\.windows-build-tools\python27;D:\developSoftware\Git\cmd;D:\officeSoftware\NodeJS;D:\officeSoftware\NodeJS\;C:\Users\cool\AppData\Local\Microsoft\WindowsApps;D:\developSoftware\Microsoft VS Code\bin;D:\officeSoftware\NodeJS\npm-global;D:\officeSoftware\NodeJS;C:\ProgramData\Hyper\resources\bin;D:\Users\Microsoft VS Code\bin;C:\Users\cool\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unable to get local issuer certificate
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+      at TLSSocket.emit (events.js:400:28)
+      at TLSSocket._finishInit (_tls_wrap.js:937:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)
+
+npm manifest: 
+  {
+    "name": "chencs-babel-tracker",
+    "version": "1.0.0",
+    "description": "自动埋点",
+    "keywords": [
+      "chencs"
+    ],
+    "author": "陈春生 <chen.chunsheng@coolcollege.cn>",
+    "homepage": "http://./lib/index.js",
+    "license": "ISC",
+    "main": "lib/index.js",
+    "directories": {
+      "lib": "lib",
+      "test": "__tests__"
+    },
+    "files": [
+      "lib"
+    ],
+    "publishConfig": {
+      "registry": "https://packages.aliyun.com/6183d17ff1ae9b61971d96b5/npm/npm-registry/"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/chencs-19950208/babel-plugin-chencs.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+      "url": "https://github.com/chencs-19950208/babel-plugin-chencs/issues"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
