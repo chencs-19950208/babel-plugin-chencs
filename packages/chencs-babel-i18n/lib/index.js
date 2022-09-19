@@ -16,7 +16,7 @@ const AST_CODE = parser.parse(sourceCode, {
 });
 
 // 新的源码
-const { code } = transformFromAstSync(AST_CODE, {
+const { code } = transformFromAstSync(AST_CODE, sourceCode, {
   plugins: [[chencsAutoPlugini18n, {
     outputDir: path.resolve(__dirname, './output')
   }]]

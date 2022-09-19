@@ -3,13 +3,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "chencs-i18n",
+      "name": "chencs-babel-i18n",
       "program": "${workspaceFolder}/packages/chencs-babel-i18n/lib/index.js"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "chencs-i18n-plugin",
+      "name": "chencs-i18n",
       "program": "${workspaceFolder}/packages/chencs-babel-i18n/lib/chencs-i18n.js"
     }
   ]
